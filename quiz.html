@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metatags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adobefont -->
+    <link rel="stylesheet" href="https://use.typekit.net/zkt5lbb.css">
+
+    <title>Den store flyttequiz</title>
+</head>
+
+<!-- CSS style -->
+<style>
+    *{
+        margin:0;
+        padding:0;
+        background-color:#A1C8B5;
+        font-family: nobel-condensed, sans-serif;
+        color: white;
+    }
+    
+    /* Boksen som hele quizzen er i */
+    .quizbox{
+        margin: 10%;
+    }
+
+    /* Spørgsmål kasserne */
+    .box{
+        background:#EAC587;
+        box-shadow: 12px 12px 0px 0px #D9B16E;
+    }
+
+    .questionbox{
+        font-size:x-large;
+        background-color:#EAC587;
+        padding:3%;
+    }
+
+    /* Boks med resultater af quizzen */
+    .resultatbox{
+        color:white;
+        font-size:x-large;
+        text-align:center;
+        background-color: #5B85A3;
+        padding:5%;
+        display:none;
+        margin: 10% 20%;
+        box-shadow: 12px 12px 0px 0px #466c87;
+        }
+    
+    /* Tekst */
+    h2{
+        font-size:xx-large;
+        background-color:#EAC587;
+        padding:3% 3% 0% 3%;
+        color:white;
+    }
+
+    /* Knapdesign */
+    .container .sendKnap{
+        background-color:#E49C7E;
+        border: none;
+        padding: 1% 2%;
+        font-size: xx-large;
+        box-shadow: 9px 9px 0px 0px #d28969;
+        display:flex;
+        justify-content: right;
+        margin-left:45%;
+    }
+
+    .container .sendKnap:hover{
+        background-color:#e99570;
+        box-shadow: 9px 9px 0px 0px #c17555;
+        cursor:pointer;
+    }
+</style>
+
+<!-- Body -->
+<body>
+
+    <!-- Quizbox: Hele quizzen -->
+    <div class="quizbox">
+
+        <!-- Spørgsmål 1 -->
+        <div class="box">
+            <h2>1. Hvad laver flest danskere til aftensmad?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question1"> Frikadeller <br>
+                <input type="radio" name="question1" id="correct1"> Spaghetti kødsovs <br>
+                <input type="radio" name="question1"> Kartofler og koteletter <br>
+            </div>
+        </div><br><br>
+      
+        <!-- Spørgsmål 2 -->
+        <div class="box"><h2>2. Hvad tåler at blive tørretumblet?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question2"> Uldstrømper <br>
+                <input type="radio" name="question2"> BH'er <br>
+                <input type="radio" name="question2" id="correct2"> Håndklæder og sengetøj <br>
+            </div>
+        </div><br><br>
+     
+        <!-- Spørgsmål 3 -->
+        <div class="box"><h2>3. Hvor ofte bør man støvsuge?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question3"> En gang om måneden <br>
+                <input type="radio" name="question3" id="correct3"> En gang om ugen <br>
+                <input type="radio" name="question3"> Et par gange om året <br>
+            </div>
+        </div><br><br>
+     
+        <!-- Spørgsmål 4 -->
+        <div class="box"><h2>4. Hvilken ingrediens hører typisk ikke til i en kødsovs?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question4" id="correct4"> Ingefær <br>
+                <input type="radio" name="question4"> Oregano <br>
+                <input type="radio" name="question4"> Løg <br>
+            </div>
+        </div><br><br>
+
+        <!-- Spørgsmål 5 -->
+        <div class="box"><h2>5. Hvilken af disse tre planter er en god begynderplante?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question5"> Rhododendron <br>
+                <input type="radio" name="question5" id="correct5"> Gummitræ <br>
+                <input type="radio" name="question5"> Svigermors skarpe tunge <br>
+            </div>
+        </div><br><br>
+   
+        <!-- Spørgsmål 6 -->
+        <div class="box"><h2>6. Hvilket rengøringsmiddel er et must ifølge vores guide?</h2> 
+            <div class="questionbox">
+                <input type="radio" name="question6" id="correct6"> Universalrengøring <br>
+                <input type="radio" name="question6"> Grøn sæbe <br>
+                <input type="radio" name="question6"> Skurecreme <br>
+            </div>
+        </div><br><br>
+   
+        <!-- Spørgsmål 7 -->
+        <div class="box"><h2>7. Hvad er kogetiden, hvis man gerne vil lave et blødkogt æg?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question7"> Omkring 15 minutter <br>
+                <input type="radio" name="question7"> 1-2 minutter <br>
+                <input type="radio" name="question7" id="correct7"> 4-6 minutter <br>
+            </div>
+        </div><br><br>
+   
+        <!-- Spørgsmål 8 -->
+        <div class="box"><h2>8. Hvilken temperatur trives husplanter bedst i?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question8"> 30 grader <br>
+                <input type="radio" name="question8" id="correct8"> 20-23 grader <br>
+                <input type="radio" name="question8"> Alt over 12 grader <br>
+            </div>
+        </div><br><br>
+    
+        <!-- Spørgsmål 9 -->
+        <div class="box"><h2>9. Hvilken slags tøj skal man være særligt forsigtig ved?</h2> 
+            <div class="questionbox">
+                <input type="radio" name="question9"> Bomuld <br>
+                <input type="radio" name="question9" id="correct9"> Uld <br>
+                <input type="radio" name="question9"> Polyester <br></div>
+        </div><br><br>
+     
+        <!-- Spørgsmål 10 -->
+        <div class="box"><h2>10. Hvad kan man gøre, hvis man er træt af at skure og skrubbe snavs af?</h2> 
+            <div class="questionbox">
+                <input type="radio" name="question10"> Læg det, du ønsker at rengøre, ud i solen i et par timer <br>
+                <input type="radio" name="question10"> Ring til mor <br>
+                <input type="radio" name="question10" id="correct10"> Læg det, du ønsker at rengøre, i et citron- og eddikebad <br>
+            </div>
+        </div><br><br>
+        
+        <!-- Spørgsmål 11 -->
+        <div class="box"><h2>11. Hvordan sortere man sit vasketøj?</h2>
+            <div class="questionbox">
+                <input type="radio" name="question11" id="correct11"> Hvidt, sort og farvet skal hver for sig <br>
+                <input type="radio" name="question11"> Det er ikke nødvendigt at sortere vasketøjet, da alt gerne må vaskes sammen <br>
+                <input type="radio" name="question11"> De nyeste vaskemaskiner kan selv sortere tøjet i trumlen <br>
+            </div>
+        </div><br><br>
+  
+        <!-- Spørgsmål 12 -->
+        <div class="box"><h2>12. Hvilke ingredienser kan være ekstra gode for din plante</h2> 
+            <div class="questionbox">
+                <input type="radio" name="question12"> Salt og sukker <br>
+                <input type="radio" name="question12" id="correct12"> Kaffe og æggeskaller <br>
+                <input type="radio" name="question12"> Citron og eddike <br>
+            </div>
+        </div><br><br>
+    
+        <!-- Send knap -->
+        <div class="container">
+            <input type="submit" name="submit" value="Besvar" class="sendKnap" onclick="result()">
+        </div>
+
+    </div>
+    
+    <!-- Boks med resultater -->
+    <div class="boksMedResultat"> 
+        <h3 class="resultatbox" id="quizsvar"></h3>
+    </div>
+
+    <!-- Javascript kode -->
+    <script>
+
+        /* Funktion som kaldes ved tryk på knap*/
+        function result() {
+
+    /* Vi laver en variabel som er scoren i quizzen */        
+    var score=0;
+
+    /* If-statements som ser om det korrekte svar er valg. 
+    Er det valgt indsættes der 1 til scoren. */
+    if (document.getElementById('correct1').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct2').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct3').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct4').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct5').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct6').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct7').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct8').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct9').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct10').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct11').checked)
+    {
+        score++;
+    }
+    if (document.getElementById('correct12').checked)
+    {
+        score++;
+    }
+
+    /* Variablen resultat, starter tom */
+    var result = "";
+
+    /* Else If-statements som sætter resultatet udfra scoren */
+    if (score < 4){
+        /* Her sætter vi resultatet */
+        result = ("Du skal nok øve dig lidt mere. Du fik " + score + "/12")
+        /* Her sendes resultatet til vores HTML og vores h1 med id'et quizsvar */
+        document.getElementById('quizsvar').innerHTML = result;
+    }
+
+    else if (score === 4 || score === 5 || score === 6 || score === 7){
+        result = ("Godt klaret, men der er altid plads til forbedringer. Du fik " +score +"/12")
+        document.getElementById('quizsvar').innerHTML = result;
+    }
+
+    else if(score => 8) {
+        result = ("Tillykke, du er klar til at flytte hjemmefra! Du fik "+score+ "/12")
+        document.getElementById('quizsvar').innerHTML = result;
+    }
+
+    /* Når knappen trykket ændres display:none til display:block 
+    Så går resultatboksen fra at være usynlig til at kunne ses  */
+    document.querySelector(".resultatbox").style.display = "block"
+    
+    /* Når knappen trykket kommer man til bunden af siden så man kan se boksen  */
+    window.scrollTo(0,document.body.scrollHeight);   
+    }
+    </script>
+
+</body>
+</html>
